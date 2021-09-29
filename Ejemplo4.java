@@ -13,5 +13,6 @@ public class Ejemplo4{
 
 		squareArea = side * side;
 		System.out.println(squareArea);
+		inputValue.close();
 	}
 }

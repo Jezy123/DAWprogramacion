@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Ejemplo5",
+            "request": "launch",
+            "mainClass": "Ejemplo5",
+            "projectName": "DAWprogramacion_41cb719f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo4",
+            "request": "launch",
+            "mainClass": "Ejemplo4",
+            "projectName": "DAWprogramacion_41cb719f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio1",
+            "request": "launch",
+            "mainClass": "Ejercicio1",
+            "projectName": "DAWprogramacion_41cb719f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio2",
+            "request": "launch",
+            "mainClass": "Ejercicio2",
+            "projectName": "DAWprogramacion_41cb719f"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio3",
+            "request": "launch",
+            "mainClass": "Ejercicio3",
+            "projectName": "DAWprogramacion_41cb719f"
+        }
+    ]
+}
