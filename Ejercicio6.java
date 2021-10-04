@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String[] args) {
 
-        float radio;
+        double radio;
         double PI;
         double area;
         double perimetro; 
@@ -11,7 +11,7 @@ public class Ejercicio6 {
 
         Scanner lector = new Scanner(System.in);
         radio = lector.nextDouble();
-        inputValue.close();
+        lector.close();
 
         PI = 3.14159;
         area = PI * radio *radio;
