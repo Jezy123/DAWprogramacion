@@ -1,11 +1,15 @@
 import java.util.Scanner;
 public class Ejercicio6 {
     public static void main(String[] args) {
-
+        
+        //Declaración de variables
+        
         double radio;
         double PI;
         double area;
         double perimetro; 
+
+        //Inicio de variables
 
         System.out.println("Introduce el radio");
 
