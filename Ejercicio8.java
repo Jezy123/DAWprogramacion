@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Ejercicio8 {
     public static void main(String[] args) {
         //Declaracion de variables
-        float edad; 
+        int edad; 
 
         //Inicio de programa, obtiene la  edad
         System.out.println("Introduce tu  edad");
         Scanner inputValue;
         inputValue = new Scanner(System.in);
-        edad = inputValue.nextFloat();
+        edad = inputValue.nextInt();
         inputValue.close();
 
         //Comprueba si edad es mayor de 18
