@@ -27,21 +27,22 @@ public class Ejercicio13 {
 
             case "ascendente":
 
-            if (numero>=numero2){
-                System.out.println(numero2 +" , "+numero);
-            }else{
-                System.out.println(numero +" , "+ numero2);
-            }
+                if (numero>=numero2){
+                    System.out.println(numero2 +" , "+numero);
+                }else{
+                    System.out.println(numero +" , "+ numero2);
+                }
         
-            break;
+                break;
 
             case "descendente":
 
-            if (numero>=numero2){
-                System.out.println(numero2 +" , "+numero);
-            }else{
-                System.out.println(numero +" , "+ numero2);
-            }
+                if (numero>=numero2){
+                    System.out.println(numero2 +" , "+numero);
+                }else{
+                    System.out.println(numero +" , "+ numero2);
+                }
+                break;
         }
     
     }
