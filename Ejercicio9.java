@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ejercicio8 {
+public class Ejercicio9 {
     public static void main(String[] args) {
         //Declaracion de variables
         float edad; 
@@ -14,6 +14,8 @@ public class Ejercicio8 {
         //Comprueba si edad es mayor de 18
         if (edad >= 18){
             System.out.println("You have the legal age");
+        }else{
+            System.out.println("You are under legal age");
         }
     }
 }
