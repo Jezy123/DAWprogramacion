@@ -3,7 +3,7 @@ public class Ejercicio14 {
     public static void main(String[] args) {
         
         //Declaracion de variables
-        double nota;
+        byte nota;
 
         //Inicio de programa y obtencion de los numeros
         System.out.println("Introduce tu nota   ");
@@ -12,7 +12,7 @@ public class Ejercicio14 {
         inputValue = new Scanner(System.in);
 
     
-        nota = inputValue.nextDouble();
+        nota = inputValue.nextByte();
 
         inputValue.close();
 
