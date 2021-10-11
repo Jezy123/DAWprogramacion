@@ -32,6 +32,8 @@ public class Ejercicio18 {
 
                 if (horas == 24){
                     horas = 00;
+
+                
                 }
             
             
