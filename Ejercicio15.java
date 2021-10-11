@@ -58,6 +58,8 @@ public class Ejercicio15 {
             case 10:
                 System.out.println("diez");
                 break;
+            default:
+            System.out.println("El numero debe estar entre 0-10");
         }
 
     }
