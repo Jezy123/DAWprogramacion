@@ -25,7 +25,7 @@ public class Control01 {
 
             System.out.println("Dime la longitud del lado del polígono:");
             longitud = inputValue.nextFloat();
-            inputValue.close();
+            
 
             //Dependiendo del numero de lado calculara el perimetro del triangulo o cuadrado 
 
@@ -41,6 +41,7 @@ public class Control01 {
             }
 
         }
+        inputValue.close();
 
     }
     
