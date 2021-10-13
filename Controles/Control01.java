@@ -8,7 +8,6 @@ public class Control01 {
         int lados;
         float longitud;
 
-
         //Pido el numero de lados
 
         System.out.println("Dime el número de lados del polígono:");
@@ -26,7 +25,6 @@ public class Control01 {
             System.out.println("Dime la longitud del lado del polígono:");
             longitud = inputValue.nextFloat();
             
-
             //Dependiendo del numero de lado calculara el perimetro del triangulo o cuadrado 
 
             switch(lados){
