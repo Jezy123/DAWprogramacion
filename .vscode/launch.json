@@ -9,6 +9,27 @@
             "name": "Launch Ejercicio28",
             "request": "launch",
             "mainClass": "Ejercicios.Ejercicio28",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio29",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio29",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio27",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio27",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio28",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio28",
             "projectName": "DAWprogramacion_8b28369a"
         },
         {
