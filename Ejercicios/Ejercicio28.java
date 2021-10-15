@@ -5,7 +5,6 @@ public class Ejercicio28 {
     public static void main(String[] args) {
         int numero;
         double resto;
-        double primo=0;
         double resultado;
 
         
@@ -16,7 +15,7 @@ public class Ejercicio28 {
         lector.close();
 
 
-        resto = numero%2;
+
 
         for(int i=2; i<(numero+1); i++){
 
@@ -29,7 +28,6 @@ public class Ejercicio28 {
 
             }else if (resto==0 && resultado!=1){
                 System.out.println("El numero no primo");
-                primo=1;
                 i= numero+1;
             }
         }
