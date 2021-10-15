@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ejercicio22",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio22",
+            "projectName": "DAWprogramacion_8b28369a"
+        },
+        {
+            "type": "java",
             "name": "Launch Ejercicio21",
             "request": "launch",
             "mainClass": "Ejercicios.Ejercicio21",
