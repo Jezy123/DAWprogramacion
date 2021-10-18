@@ -21,8 +21,7 @@ public class Ejercicio31 {
         anArray[8] = 900;
         anArray[9] = 1000;
         for(int i=0;i<10;i++){
-        System.out.println("Element at index 0: "
-                           + anArray[i]);
+        System.out.println("Element at index "+i+ " "+ anArray[i]);
         }
         
     }
