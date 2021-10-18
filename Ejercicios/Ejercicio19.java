@@ -35,6 +35,8 @@ public class Ejercicio19 {
         } else if (GanadoSinImpuestos<=900){
                
                 Tasas= ((GanadoSinImpuestos-500)*0.25);
+                GanadoNeto= GanadoSinImpuestos-Tasas;
+
 
         } else if (GanadoSinImpuestos>900){
 
