@@ -4,9 +4,13 @@ import java.util.Scanner;
 public class Ejercicio35 {
     public static void main(String[] args) {
         
-        int[] Cnota;
+        int repeticiones=0;
         int nota;
+        int notamedia=0;
         int finalizar=0;
+        int[] anArray= new int[100];
+        int maxnota = 0;
+        
         
         
         Scanner lector;
@@ -18,20 +22,33 @@ public class Ejercicio35 {
             System.out.println("Introduce un numero");
             nota=lector.nextInt();
 
-            if (nota!=-1){
+            if (nota==-1){
                 finalizar=100;
             }else{
-                int[] anArray;
-
-                anArray= new int [i];
-                anArray[i-1]=nota;
-                System.out.println(anArray);
-                
-            
+                anArray[i]=nota;
+                repeticiones++;
+                if(nota==10){
+                    maxnota++;
+                }
+          
             }
-            lector.close();
-
         
+        }
+        for(int i= repeticiones-1;  i>=0; i--  ){
+            notamedia+=anArray[i];
+        }
+        notamedia=notamedia/(repeticiones);
+        lector.close();
+        
+        if (repeticiones!=0){
+            System.out.println("Tu media es de " + notamedia);
+            if(maxnota!=0){
+                System.out.println("Y has sacado un diez !!!"); 
+            }else{
+                System.out.println("Y no  has sacado ningun10");     
+            }
+        }else{
+            System.out.println("Tu media es de 0 y no has sacado ningun 10");
         }
     }
 }
