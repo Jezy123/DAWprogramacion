@@ -20,8 +20,9 @@ public class Ejercicio25 {
             factorial= factorial * numero;
 
         }
-
-        System.out.println("Su factorial es "+ factorial);
+        if (numero>1){
+            System.out.println("Su factorial es "+ factorial);
+        }
         lector.close();
     }
 }
