@@ -36,7 +36,9 @@ public class Ejercicio24 {
         }while (finalizar==0);
 
         inputValue.close();
-    
-        System.out.println("Tu media es de " + media/repeticiones + " y has sacado un 10 " + maxnota + "veces");
+        if(media==0){
+            System.out.println("Tu media es de 0 y has sacado un 10 " + maxnota + "veces");
+        }else{ 
+            System.out.println("Tu media es de " + media/repeticiones + " y has sacado un 10 " + maxnota + "veces");}
     }
 }
