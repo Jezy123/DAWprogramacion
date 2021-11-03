@@ -4,40 +4,47 @@ import java.util.Scanner;
 public class Entrada {
     public static int getInteger() {
 
-        int x = 0;
+        int nsindecimales = 0;
+        boolean comprueba_n;
 
         Scanner lector;
+        lector= new Scanner(System.in);
 
-        do{         
-            System.out.println("introduce un numero");
-            lector=new Scanner(System.in);
-        }while(lector.hasNextInt()== false);
-
-        x=lector.nextInt();
+        do{  
+            comprueba_n= lector.hasNextInt();
+            if (comprueba_n) {
+                nsindecimales=lector.nextInt();
+                
+            } else {
+                lector.nextLine();
+                
+            }
+        }while(!comprueba_n);
         
-        lector.close();
-        return x;
+        return nsindecimales;
         
     }    
 
     public static double getDouble() {
+        
+        double ncondecimales = 0.0;
+        boolean comprueba_n;
 
-        double x = 0.0;
-        boolean z;
-        int i = 0 ;
-    
         Scanner lector;
-        lector=new Scanner(System.in);
+        lector= new Scanner(System.in);
 
         do{  
-            z= lector.hasNextDouble();
-            if (z==true){
-                x=lector.nextDouble();
-                i++;
+            comprueba_n= lector.hasNextDouble();
+            if (comprueba_n) {
+                ncondecimales=lector.nextDouble();                
+            } else {
+                lector.nextLine();               
             }
-        }
-        while(i==0);
-        return x;
+        }while(!comprueba_n);  
+
+
+        return ncondecimales;
+        
         
             
           
