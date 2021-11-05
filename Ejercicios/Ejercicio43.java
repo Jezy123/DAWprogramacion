@@ -6,20 +6,24 @@ public class Ejercicio43{
         int n1;
         int n2;
         Scanner lector;
+        int i=1;
         lector= new Scanner(System.in);
+        
 
         System.out.println("Introduce dos numeros");
         n1=lector.nextInt();
         n2=lector.nextInt();
-        int resultado=n1;
 
-        for (int i=1; i<n2;i++){
-            if(resultado>n2){
-                resultado-= n1;
+        lector.close();
+
+
+        for (i =1;n1>n2;i++){
+            if(n1>n2){
+                n1= n1 - n2;
             }
         }
-        System.out.println(resultado);
-        lector.close();
+        System.out.println(i);
+        
 
     }
 }
