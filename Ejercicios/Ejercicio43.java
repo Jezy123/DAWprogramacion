@@ -23,6 +23,7 @@ public class Ejercicio43{
             }
         }
         System.out.println(i);
+        System.out.println(n1);
         
 
     }
