@@ -2,11 +2,12 @@ package Temas2;
 
 public class Potencia {
     public static double potencia (double n1, int n2){
-        double elevado=n1;
-        for (int i=2;i<=n2;i++){
-            elevado=elevado*n1;
+
+        if(n2==0){
+            return 1;
+        }else{
+            return(n1*potencia(n1,n2-1));
         }
-        return elevado;
         
         
     }
