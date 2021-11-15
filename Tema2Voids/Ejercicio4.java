@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ejercicio4 {
     public  static void positivos(int []numeros){
         int xPos=0;
-        for (int i=0;i<numeros.length-1;i++){
+        for (int i=0;i<numeros.length;i++){
             if(numeros[i]>0){
                 xPos++;
             }
