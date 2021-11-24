@@ -18,8 +18,12 @@ public class Mover0 {
         for(;x<numeritos2.length;x++){
             numeritos2[x]=0;
         }
-        for (int i=0;i<numeritos2.length;i++){
-            System.out.print(numeritos2[i]+" ");
+
+        for(int i=0;i<numeritos2.length;i++){
+            numeritos[i]=numeritos2[i];
+        }
+        for (int i=0;i<numeritos.length;i++){
+            System.out.print(numeritos[i]+" ");
         }
     
     }  
