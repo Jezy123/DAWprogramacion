@@ -16,7 +16,7 @@ public class Duplicados {
                 }
         
             }
-        numeros[i]=0;
+  
         }
     }
     }
