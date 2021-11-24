@@ -20,7 +20,7 @@ public class Eliminar {
         
         do{
             
-            if(indice>6){
+            if(indice>=6){
                 System.out.println("ERROR!!! Introduce un indice valido");
             }
             
