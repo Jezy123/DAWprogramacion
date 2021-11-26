@@ -3,9 +3,6 @@ package Arrays;
 public class ValoresACero {
 
     public static void RellenarMatriz(int[][]anArray) {
-        
-          
-          
     
         for(int i=0;i<10;i++){
             for (int x=0;x<10;x++){
