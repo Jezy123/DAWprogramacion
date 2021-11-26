@@ -19,6 +19,7 @@ public class ValoresACero {
         int NDeCeros=0;
         int Filas=0;
         int Columnas=0;
+
         //Filas
         for(int i=0;i<10;i++){
             for (int x=0;x<10;x++){
@@ -28,7 +29,6 @@ public class ValoresACero {
                 if(NDeCeros==10){
                     Filas++;
                 }
-            
             }
         NDeCeros=0;
         }
@@ -45,6 +45,7 @@ public class ValoresACero {
             }
         NDeCeros=0;
         }
+        
         System.out.println("Hay un total de "+Filas+"  filas llenas de ceros");
         System.out.println("Hay un total de "+Columnas+"  Columnas llenas de ceros");
 
