@@ -24,9 +24,10 @@ public class HundirLaFlota {
 
         System.out.println("  1 2 3 4 5 6 7 8");
 
-        if(tablero[NumericoX][NumericoY]==1){
-            tablero[NumericoX][NumericoY]=3;
-        }else{tablero[NumericoX][NumericoY]=2;}
+        if(tablero[NumericoY][NumericoX]==1){
+            tablero[NumericoY][NumericoX]=3;
+
+        }else{tablero[NumericoY][NumericoX]=2;}
             
             
             
