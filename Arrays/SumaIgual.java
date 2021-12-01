@@ -11,7 +11,7 @@ public class SumaIgual {
 
         for (int i=0;i<arrayNum.length;i++){
 
-            for (int x=0;x<arrayNum.length;x++){
+            for (int x=i;x<arrayNum.length;x++){
                 if(arrayNum[i]+arrayNum[x]==numero){
                     System.out.println("Indice "+i+" "+x+" "+"("+arrayNum[i]+"+"+arrayNum[x]+")");
                 }
