@@ -2,10 +2,14 @@ package Arrays;
 
 public class Iguales {
     public static void main(String[] args) {
+
+        /* el ejercicio esta mal realizado*/
         double moduloVector1=0;
+
         double moduloVector2=0;
         int[]vector1={2,5,1,6};
         int[]vector2={5,1,2,6};
+
         for(int i=0;i<vector1.length;i++){
             moduloVector1+= Math.pow(vector1[i], 2);
         }
