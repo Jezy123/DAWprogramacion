@@ -7,7 +7,7 @@ public class HundirLaFlota {
         int n2;
         int cont = 0;
 
-        while (cont <=10) {
+        while (cont <10) {
             n1 = (int) (Math.random()*8); 
             n2 = (int) (Math.random()*8);
             if (tablero[n1][n2] != 1) {
@@ -18,19 +18,19 @@ public class HundirLaFlota {
 
         
     }
-    public static void Imprimir(int NumericoX,int NumericoY,int[][]tablero){ 
+
+    public static int Imprimir(int NumericoX,int NumericoY,int[][]tablero,int barcosNoHundidos){ 
 
         String[]Letras={"A","B","C","D","E","F","G","H"};
+
 
         System.out.println("  1 2 3 4 5 6 7 8");
 
         if(tablero[NumericoY][NumericoX]==1){
             tablero[NumericoY][NumericoX]=3;
+            barcosNoHundidos=barcosNoHundidos-1;
 
-        }else{tablero[NumericoY][NumericoX]=2;}
-            
-            
-            
+        }else{tablero[NumericoY][NumericoX]=2;} 
         
         for(int i=0;i<tablero.length;i++){
         
@@ -45,8 +45,8 @@ public class HundirLaFlota {
                             System.out.print("·");
                             break;
                         case 1:
-                            System.out.print("+");
-                            
+                            System.out.print("·");
+                          
                             break;
                         case 2:
                             System.out.print("0");
@@ -59,20 +59,23 @@ public class HundirLaFlota {
             }
         System.out.println("");
         }
+        return barcosNoHundidos;
     }
 
     public static void main(String[] args) {
         int[][]tablero=new int[8][8];
         char Letra;
+        int disparosRealizados=0;
         int NumericoX;
         int barcosNoHundidos=10;
         int NumericoY=0;
         barcos(tablero);
         char[]LetrasPosibles={'A','B','C','D','E','F','G','H'};
+        Scanner lector= new Scanner(System.in);
 
         while(barcosNoHundidos>=1){
-            System.out.println("Introduze una fila (letra) ");
-            Scanner lector= new Scanner(System.in);
+            System.out.println("Introduze una fila (letra en mayúscula) ");
+            
             Letra=lector.next().charAt(0);
 
         
@@ -87,8 +90,13 @@ public class HundirLaFlota {
                 }
             }
       
-            Imprimir(NumericoX,NumericoY,tablero);
+            barcosNoHundidos=Imprimir(NumericoX, NumericoY, tablero,barcosNoHundidos);
+            System.out.println(barcosNoHundidos +" Barcos sin hundir");
+            disparosRealizados++;
+            System.out.println(disparosRealizados+" Disparos");
         }
+        System.out.println("Tu Ganas");
+        lector.close();
     }
     
 }
