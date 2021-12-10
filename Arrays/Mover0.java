@@ -8,6 +8,7 @@ public class Mover0 {
         for (int i=0;i<numeritos.length;i++){
             System.out.print(numeritos[i]+" ");
         }
+        
         System.out.println("");
         for(int i=0;i<numeritos.length;i++){
             if(numeritos[i]!=0){

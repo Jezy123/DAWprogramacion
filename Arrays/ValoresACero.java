@@ -8,7 +8,7 @@ public class ValoresACero {
             for (int x=0;x<10;x++){
                 int numeroAleatorio=(int)(Math.round(Math.random()*1)+0);
                 anArray[i][x]= numeroAleatorio;
-                System.out.print(anArray[i][x]);
+                System.out.print(anArray[i][x]+" ");
             }
         System.out.println("");
         }
