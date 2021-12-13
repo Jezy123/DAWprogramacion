@@ -2,8 +2,8 @@ package Strings;
 
 public class Comparar {
     public static void main(String[] args) {
-        String Palabras1="aqui hay una cadena de texto";
-        String Palabras2="aqui tambien hay un texto";
+        String Palabras1=Utilidades.leerCadena("introduce palabra1");
+        String Palabras2=Utilidades.leerCadena("introduce palabra2");
         int diferencia=Palabras1.compareTo(Palabras2);
         System.out.println(diferencia);
         if (diferencia>0){
