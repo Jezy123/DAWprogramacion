@@ -16,7 +16,7 @@ public class Parentesis {
                 break;
             }
         }
-        if(numDeParentesis<0){
+        if(numDeParentesis>0){
             System.out.println("La frase esta mal parentizada");
         }
         if(numDeParentesis==0){
