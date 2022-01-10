@@ -9,9 +9,9 @@ public class AnalizaString {
         for(int i=0;i<frase.length();i++){
             char letra=frase.charAt(i);
 
-            if(Character.isDigit(letra)==true){
+            if(Character.isDigit(letra)){
                 Nnumeros++;
-            }else if(Character.isLetter(letra)==true){
+            }else if(Character.isLetter(letra)){
                 Nletras++;
             }else {
                 Notros++;
