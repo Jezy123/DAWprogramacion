@@ -16,14 +16,12 @@ class alumno{
         id=i;
         nombre=nom;
         grupo=grup;
-
         numAlumn();
     }
     public alumno(int i,String nom){
         id=i;
         nombre=nom;
         grupo="1CFS"; 
-
         numAlumn();
 
     }
@@ -36,9 +34,9 @@ class alumno{
         numAlumnos++;
     }
     
-    void imprimirInforme(alumno arrayDeAlumnos[]){
+    static void imprimirInformeAlumnos(alumno arrayDeAlumnos[]){
         for(int i=0;i<arrayDeAlumnos.length;i++){
-            System.out.println(nombre+" "+grupo);
+            System.out.println(arrayDeAlumnos[i].nombre+" "+arrayDeAlumnos[i].grupo);
         }
     }
 
@@ -47,7 +45,9 @@ class alumno{
         a1= new alumno(01,"Juanito","2CFS");
         a2= new alumno(01,"Pepito","2CFS");
         a3= new alumno(01,"ALejandrito");
+        alumno [] arrayDeAlumnos={a1,a2,a3};
         a1.preguntarDuda();
+        imprimirInformeAlumnos(arrayDeAlumnos);
     
 
     }
