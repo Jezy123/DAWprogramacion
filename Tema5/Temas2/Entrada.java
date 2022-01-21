@@ -1,4 +1,4 @@
-package Temas2;
+package Tema5.Temas2;
 import java.util.Scanner;
 
 public class Entrada {

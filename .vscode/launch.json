@@ -6,6 +6,237 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ChorriChat",
+            "request": "launch",
+            "mainClass": "Strings.ChorriChat",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Palabras1",
+            "request": "launch",
+            "mainClass": "Strings.Palabras1",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Encriptar",
+            "request": "launch",
+            "mainClass": "Strings.Encriptar",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pasatiempos",
+            "request": "launch",
+            "mainClass": "Strings.Pasatiempos",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Prueba",
+            "request": "launch",
+            "mainClass": "Arrays.Prueba",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Alfabetica",
+            "request": "launch",
+            "mainClass": "Strings.Alfabetica",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Siglas",
+            "request": "launch",
+            "mainClass": "Strings.Siglas",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Invertida",
+            "request": "launch",
+            "mainClass": "Strings.Invertida",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Parentesis",
+            "request": "launch",
+            "mainClass": "Strings.Parentesis",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Digitos",
+            "request": "launch",
+            "mainClass": "Strings.Digitos",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Longitud3",
+            "request": "launch",
+            "mainClass": "Strings.Longitud3",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Longitud2",
+            "request": "launch",
+            "mainClass": "Strings.Longitud2",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Longitud",
+            "request": "launch",
+            "mainClass": "Strings.Longitud",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Substring",
+            "request": "launch",
+            "mainClass": "Strings.Substring",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch LastOfIndex",
+            "request": "launch",
+            "mainClass": "Strings.LastOfIndex",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch IndexOf",
+            "request": "launch",
+            "mainClass": "Strings.IndexOf",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reemplazar",
+            "request": "launch",
+            "mainClass": "Strings.Reemplazar",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ends",
+            "request": "launch",
+            "mainClass": "Strings.Ends",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Contains",
+            "request": "launch",
+            "mainClass": "Strings.Contains",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Concat",
+            "request": "launch",
+            "mainClass": "Strings.Concat",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompararIgnoreCase",
+            "request": "launch",
+            "mainClass": "Strings.CompararIgnoreCase",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Comparar",
+            "request": "launch",
+            "mainClass": "Strings.Comparar",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch HundirLaFlota",
+            "request": "launch",
+            "mainClass": "Arrays.HundirLaFlota",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tablero",
+            "request": "launch",
+            "mainClass": "Arrays.Tablero",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValoresACero",
+            "request": "launch",
+            "mainClass": "Arrays.ValoresACero",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch RellenarMatriz",
+            "request": "launch",
+            "mainClass": "Arrays.RellenarMatriz",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mover0",
+            "request": "launch",
+            "mainClass": "Arrays.Mover0",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParesImpares",
+            "request": "launch",
+            "mainClass": "Arrays.ParesImpares",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Iguales",
+            "request": "launch",
+            "mainClass": "Arrays.Iguales",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaIgual",
+            "request": "launch",
+            "mainClass": "Arrays.SumaIgual",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Comunes",
+            "request": "launch",
+            "mainClass": "Arrays.Comunes",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duplicados",
+            "request": "launch",
+            "mainClass": "Arrays.Duplicados",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Eliminar",
+            "request": "launch",
+            "mainClass": "Arrays.Eliminar",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
             "name": "Launch Ejercicio47",
             "request": "launch",
             "mainClass": "Ejercicios.Ejercicio47",

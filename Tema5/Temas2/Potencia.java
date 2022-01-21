@@ -1,4 +1,4 @@
-package Temas2;
+package Tema5.Temas2;
 
 public class Potencia {
     public static double potencia (double n1, int n2){

@@ -1,4 +1,4 @@
-package Temas2;
+package Tema5.Temas2;
 public class LetraDNI {
     public static char letraDNI( int DNI){
 

@@ -18,8 +18,10 @@ public class Silla {
         String[]colorin={"verde","rojo", "azul","amarillo"};
         String[]materiales={"carton","metal","madera","plastico"};
 
-        color = colorin[(int)(Math.random()*(colorin.length)+0-1)];
-        material = materiales[(int)(Math.random()*(materiales.length-1)+0)];
+        //Math random= 0 y 1 excluido el 1
+        // Mathrandom*(max-min+1)-min
+        color = colorin[(int)(Math.random()*(colorin.length))];
+        material = materiales[(int)(Math.random()*(materiales.length))];
         int numDePatas= (int)(Math.random()*5+0);
         respaldo=false;
 
@@ -54,7 +56,7 @@ public class Silla {
 
 
     public int getNumDePatas() {
-        return numDePatas;
+        return numDePatas; 
     }
 
 

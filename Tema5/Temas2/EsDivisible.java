@@ -1,4 +1,4 @@
-package Temas2;
+package Tema5.Temas2;
 
 public class EsDivisible {
     public static boolean esDivisible (int n, int m){

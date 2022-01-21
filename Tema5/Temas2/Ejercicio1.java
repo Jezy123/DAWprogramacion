@@ -1,4 +1,4 @@
-package Temas2;
+package Tema5.Temas2;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
