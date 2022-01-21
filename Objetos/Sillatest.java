@@ -7,7 +7,7 @@ public class Sillatest {
         for(int i=0;i<100;i++){
             anArray[i]= new Silla();
         }
-        
+        anArray[2].setColor("rojo");
 
     }
 }
