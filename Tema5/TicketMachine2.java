@@ -19,6 +19,7 @@ public class TicketMachine2
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int discount;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -31,6 +32,9 @@ public class TicketMachine2
         total=0;
         return antiguoPrecio;
 
+    }
+    public void setDiscount(int descuento){
+      discount=descuento;
     }
     public TicketMachine2(int cost)
     {
@@ -78,7 +82,8 @@ public class TicketMachine2
      */
     public void printTicket()
     {
-        int amountToPay=price-balance;
+        price=(int)(price*(100-discount)/100);
+        int amountToPay=balance-price;
         if(amountToPay>=0) {
             // Simulate the printing of a ticket.
             System.out.println("##################");
