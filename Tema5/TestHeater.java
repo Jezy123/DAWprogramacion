@@ -2,14 +2,16 @@ package Tema5;
 
 public class TestHeater {
     public static void main(String[] args) {
-        Heater estufa= new Heater(22, 15, 35);
-        estufa.cooler();
-        estufa.warmer();
-        estufa.setIncrement(8);
-        estufa.setIncrement(3);
-        estufa.cooler();
-        estufa.cooler(); 
-        estufa.cooler();
+        Heater calefactor= new Heater(5,25);
+        calefactor.cooler();
+        System.out.println( calefactor.getTemperature());
+        calefactor.warmer();
+        calefactor.setIncrement(8);
+        calefactor.setIncrement(3);
+        calefactor.cooler();
+        System.out.println( calefactor.getTemperature());
+        calefactor.cooler(); 
+        calefactor.cooler();
    
     }
 }
