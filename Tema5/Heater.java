@@ -15,6 +15,7 @@ public class Heater {
         this.max= max;
     }
 
+
     //Aumenta el valor de la temperatura
     public void warmer(){
         if(this.temperature+increment<max){
@@ -24,6 +25,7 @@ public class Heater {
         }
     }
 
+
     //Reduce el valor de la temperatura
     public void cooler(){
         if(this.temperature-increment>min){
@@ -32,6 +34,7 @@ public class Heater {
                 System.out.println("Error: no se puede superar el valor minimo");
         }
     }
+    
 
     //Modifica el valor de incremento de la temperatura
     public void setIncrement(double increment){
