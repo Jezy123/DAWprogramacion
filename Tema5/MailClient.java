@@ -1,4 +1,7 @@
 package Tema5;
+
+
+
 /**
  * A class to model a simple email client. The client is run by a
  * particular user, and sends and retrieves mail via a particular server.
@@ -42,7 +45,7 @@ public class MailClient
         }
         else {
             item.print();
-        }
+        } 
     }
 
     /**
@@ -51,9 +54,27 @@ public class MailClient
      * @param to The intended recipient.
      * @param message The text of the message to be sent.
      */
+
     public void sendMailItem(String to,String asunto ,String message)
     {
-        MailItem item = new MailItem(user, to,asunto,message);
-        server.post(item);
+ 
+        String nombres[]=to.split(";");
+        for (int i=0;i<nombres.length;i++){
+            MailItem item = new MailItem(user,nombres[i],asunto,message);
+            server.post(item);
+        }
+    }
+
+    public void forwarMailItem(String forward){
+
+        MailItem item = server.getNextMailItem(user);
+        if(item == null) {
+            System.out.println("No new mail.");
+        }
+        else {
+            item.print();
+            item.setTo(forward); 
+            server.post(item);
+        } 
     }
 }
