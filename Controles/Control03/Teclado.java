@@ -17,7 +17,7 @@ public class Teclado {
         return color;
     }
 
-    public int getNumeroDeTeclas() {
+    public int getNumeroDeTeclas() { 
         return numeroDeTeclas;
     }
 
@@ -34,7 +34,7 @@ public class Teclado {
     }
 
     public Teclado() {
-        color = "Negro";
+        color =   "Negro";
         numeroDeTeclas = 104;
         conectividad = false;
         idioma = "ES";
