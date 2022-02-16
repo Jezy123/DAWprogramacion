@@ -18,6 +18,7 @@ public class MusicOrganizer
     // A reader that can read music files and load them as tracks.
     private TrackReader reader;
 
+    private String lastTrack;
     /**
      * Create a MusicOrganizer
      */
@@ -58,9 +59,16 @@ public class MusicOrganizer
         if(indexValid(index)) {
             
             Track track = tracks.get(index);
-            player.startPlaying(track.getFilename());
-            System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
-            Track.playCountInc();
+            if (!track.getFilename().equals(this.lastTrack)){
+                player.stop();
+            }else{
+                player.stop();
+                player = null;
+                player.startPlaying(track.getFilename());
+                lastTrack=track.getFilename();
+                System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+                track.playCountInc();
+            }
         }
     }
     
@@ -81,7 +89,7 @@ public class MusicOrganizer
     {
         System.out.print("Track " + index + ": ");
         Track track = tracks.get(index);
-        System.out.println(track.getDetails());
+        System.out.println(track);
     }
     
     /**
@@ -92,7 +100,7 @@ public class MusicOrganizer
         System.out.println("Track listing: ");
 
         for(Track track : tracks) {
-            System.out.println(track.getDetails());
+            System.out.println(track);
         }
         System.out.println();
     }
@@ -105,7 +113,7 @@ public class MusicOrganizer
     {
         for(Track track : tracks) {
             if(track.getArtist().contains(artist)) {
-                System.out.println(track.getDetails());
+                System.out.println(track);
             }
         }
     }
@@ -128,7 +136,6 @@ public class MusicOrganizer
     {
         if(tracks.size() > 0) {
             player.startPlaying(tracks.get(0).getFilename());
-            Track.playCountInc();
         }
     }
     
@@ -180,7 +187,7 @@ public class MusicOrganizer
         
         for (Track cancion : tracks) {
             if(cancion.toString().contains(searcString)){
-                System.out.println(cancion.toString());
+                System.out.println(cancion.getTitle());
             }          
         }
     }

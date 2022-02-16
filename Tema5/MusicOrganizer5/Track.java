@@ -18,7 +18,7 @@ public class Track
 
     private String album;
 
-    private static int playCount;
+    private int playCount;
 
     public String getAlbum() {
         return album;
@@ -28,12 +28,12 @@ public class Track
         this.album = album;
     }
     
-    public static void playCountInc() {
+    public void playCountInc() {
         playCount++;;
     }
 
-    public static void setPlayCount0() {
-        Track.playCount = 0;
+    public void setPlayCount0() {
+        playCount = 0;
     }
 
     /**
@@ -105,6 +105,9 @@ public class Track
         this.artist = artist;
         this.title = title;
         this.filename = filename;
+    }
+    public String toString(){
+        return artist + " "+ title +" " + filename + " " + album;
     }
     
 }
