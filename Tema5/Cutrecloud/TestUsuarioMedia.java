@@ -1,4 +1,4 @@
-package Tema5;
+package Tema5.Cutrecloud;
 
 public class TestUsuarioMedia {
     public static void main(String[] args) {
@@ -11,8 +11,7 @@ public class TestUsuarioMedia {
         Media media3= Media.crearMedia("TRoll","VGA","La vida de alfredo",usuario4);
         Media media4= Media.crearMedia("Alfedos","DVD","La vida de alfredo",usuario4);
         Media media5= Media.crearMedia("LosLocos","VGA","La vida de alfredo",usuario4);
-        Media.eliminarMedia("remix");
-        Media.eliminarMediaFormato("VGA");
+        usuario1.parseXML();
     }
 }
 

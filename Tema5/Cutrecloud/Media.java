@@ -1,8 +1,8 @@
-package Tema5;
+package Tema5.Cutrecloud;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Media {
+public class Media implements Interface {
     
     private int idMedia; /*clave primaria*/
     private String nombre; /*Unico*/
@@ -76,6 +76,14 @@ public class Media {
                 break;
             }
         }
+
+        /*Iterator<Media>iterator = list.iterator();
+        While(iterator.hasNext()){
+            Media elemento = iterator,next();
+            if (elemento.tipo.equals(type){
+                iterator.remove()
+            }
+        }*/
     }
     
     public static void eliminarMediaFormato(String formato){
@@ -95,5 +103,14 @@ public class Media {
                 i--;
             }
         }
+    }
+
+    @Override
+    public String parseXML() {
+        String xml="<media>" + "<idMedia>"+idMedia+"</idMedia>" + "<contenido>"+ contenido +"</contenido>"+
+        "<formato>"+formato+"</formato>" + usuario.parseXML()+"</media>";
+        
+        return xml; 
+  
     }
 }

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestInterface",
+            "request": "launch",
+            "mainClass": "TestInterface",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestUsuarioMedia",
+            "request": "launch",
+            "mainClass": "Tema5.TestUsuarioMedia",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
             "name": "Launch ChorriChat",
             "request": "launch",
             "mainClass": "Strings.ChorriChat",

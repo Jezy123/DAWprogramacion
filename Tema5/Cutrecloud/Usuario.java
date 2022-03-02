@@ -1,12 +1,41 @@
-package Tema5;
+package Tema5.Cutrecloud;
 import java.util.ArrayList;
 
-public class Usuario {
+public class Usuario implements Interface {
     
     private int id; /*clave princiopal*/
     private String email; /*unico*/
     private String password;
     private static int idUnico;
+
+    public int getId() {
+        return id;
+    }
+
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public String getPassword() {
+        return password;
+    }
+
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     private static ArrayList<Usuario> arrayUsuario = new ArrayList<Usuario>();
 
@@ -76,5 +105,14 @@ public class Usuario {
         }
 
     }
+
+    @Override
+    public String parseXML() {
+        String xml="<usuario>" + "<id>"+id+"</id>" + "<password>"+ password +"</password>"+
+        "</usuario>";
+        
+        return xml; 
+    }   
+
 
 }
