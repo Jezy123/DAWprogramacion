@@ -1,0 +1,7 @@
+<media><idMedia>3</idMedia> 
+<contenido>La vida de alfredo</contenido> 
+<formato>DVD</formato> 
+<usuario>
+<id>3</id>
+<password>contra</password>
+</usuario></media>

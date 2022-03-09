@@ -1,6 +1,17 @@
 package Tema5.Cutrecloud;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+import java.io.File;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
+
 
 public class Media implements Interface {
     
@@ -14,6 +25,7 @@ public class Media implements Interface {
 
     public static ArrayList<Media> arrayMedia = new ArrayList<Media>();
 
+    private static int numero;
 
     private Media(int idMedia, String nombre, String formato, String contenido, Usuario usuario) {
         this.idMedia = idMedia;
@@ -107,10 +119,31 @@ public class Media implements Interface {
 
     @Override
     public String parseXML() {
-        String xml="<media>" + "<idMedia>"+idMedia+"</idMedia>" + "<contenido>"+ contenido +"</contenido>"+
-        "<formato>"+formato+"</formato>" + usuario.parseXML()+"</media>";
+        String xml="<media>" + "<idMedia>"+idMedia+"</idMedia> \n" + "<contenido>"+ contenido +"</contenido> \n"+
+        "<formato>"+formato+"</formato> \n" + usuario.parseXML()+"</media>";
         
         return xml; 
   
+    }
+
+    public void writterXML() {
+
+        String contenido=parseXML();
+        PrintWriter fichero= null;
+
+        try {
+            
+            fichero = new PrintWriter("Tema5/Cutrecloud/Usuarios/FicheroMedia"+numero+".txt");
+
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }  
+        numero++;
+                
+        Objects.requireNonNull(fichero).println(contenido);
+        fichero.close();
+
+
     }
 }

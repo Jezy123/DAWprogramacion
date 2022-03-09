@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch UsuarioInput",
+            "request": "launch",
+            "mainClass": "Tema5.Cutrecloud.UsuarioInput",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestUsuarioMedia",
+            "request": "launch",
+            "mainClass": "Tema5.Cutrecloud.TestUsuarioMedia",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClubDemo",
+            "request": "launch",
+            "mainClass": "Tema5.Club.ClubDemo",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
             "name": "Launch TestInterface",
             "request": "launch",
             "mainClass": "TestInterface",

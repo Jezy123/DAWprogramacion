@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "Tema5/lib/jl1.0.1.jar"
+    ]
+}

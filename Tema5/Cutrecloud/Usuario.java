@@ -1,9 +1,20 @@
 package Tema5.Cutrecloud;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.ObjectInputFilter.Status;
+import java.net.PasswordAuthentication;
 import java.util.ArrayList;
+import java.util.Objects;
+
+import javax.crypto.CipherInputStream;
 
 public class Usuario implements Interface {
     
-    private int id; /*clave princiopal*/
+    private int id; /*clave principal*/
     private String email; /*unico*/
     private String password;
     private static int idUnico;
@@ -108,11 +119,81 @@ public class Usuario implements Interface {
 
     @Override
     public String parseXML() {
-        String xml="<usuario>" + "<id>"+id+"</id>" + "<password>"+ password +"</password>"+
+        String xml="<usuario>\n" + "<id>"+id+"</id>\n" +"<email>"+email+"</email>\n"+ "<password>"+ password +"</password>\n"+
         "</usuario>";
         
         return xml; 
     }   
 
+    public void writterXML() {
+
+        String contenido=parseXML();
+        PrintWriter fichero= null;
+
+        try {
+            
+            fichero = new PrintWriter("Tema5/Cutrecloud/Usuarios/FicheroUsuario"+getId()+".txt");
+
+        } catch (FileNotFoundException e) {
+           
+            e.printStackTrace();
+        } 
+                
+        Objects.requireNonNull(fichero).println(contenido);
+        fichero.close();
+
+
+    }
+
+    public static void recuperarUsuario(){
+        
+        String emailRecuperado="";
+        String passwordRecuperado="";
+        BufferedReader reader;
+        int reiterador=1;
+        File archivo=new File ("Tema5/Cutrecloud/Usuarios/FicheroUsuario"+reiterador+".txt");
+        while(archivo.exists()){
+            try{
+            
+                reader=new BufferedReader(new FileReader("Tema5/Cutrecloud/Usuarios/FicheroUsuario"+reiterador+".txt"));
+                String line= reader.readLine();
+
+                while(line!=null){
+                
+                    if(line.contains("@")){
+                 
+                        emailRecuperado=line.substring(7, cierre(line));
+                    }
+                    if(line.contains("password")){
+                    
+                        passwordRecuperado=line.substring(10, cierre(line));
+                    }
+
+                    line=reader.readLine();
+                }
+
+                crearUsuario(emailRecuperado, passwordRecuperado);
+
+                reader.close();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
+            reiterador++;
+            archivo=new File ("Tema5/Cutrecloud/Usuarios/FicheroUsuario"+reiterador+".txt");
+        }
+       
+        
+    }
+
+    private static int cierre(String line){
+        int x=0;
+        for (int i=2;i<line.length();i++){
+            if(line.charAt(i)=='<'){
+                x=i;
+                break;
+            }
+        }
+        return x;
+    }
 
 }

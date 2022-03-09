@@ -1,0 +1,5 @@
+<usuario>
+<id>3</id>
+<email>alfredo@</email>
+<password>contra</password>
+</usuario>

@@ -1,5 +1,7 @@
 package Tema5.Cutrecloud;
 
+
+
 public class TestInterface {
 
     public static void printXML(Interface imprimible){
