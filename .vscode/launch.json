@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch UsuarioTest",
+            "request": "launch",
+            "mainClass": "Tema5.CutreCloudJulio.UsuarioTest",
+            "projectName": "DAWprogramacion-1_b3a6923b"
+        },
+        {
+            "type": "java",
             "name": "Launch UsuarioInput",
             "request": "launch",
             "mainClass": "Tema5.Cutrecloud.UsuarioInput",
