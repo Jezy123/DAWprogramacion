@@ -19,6 +19,6 @@ public abstract class Stat {
         value--;
     }
     public String toString(){
-        return value;
+        return this.toString();
     }
 }
