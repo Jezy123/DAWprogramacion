@@ -21,8 +21,9 @@ public class Forma {
         this.color = color;
     }
 
-    public void Imprimir(){
-        System.out.println("color:"+color+"\n centro:"+center.x + center.y +"\n nombre:"+ name);
+    public void imprimir(){
+        System.out.println("---------------------------");
+        System.out.println("color:"+color+"\n centro:"+center.x +" " +center.y +"\nnombre:"+ name);
     }
 
     public void mover(int x, int y){

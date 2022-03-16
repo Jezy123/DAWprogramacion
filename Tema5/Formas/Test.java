@@ -1,5 +1,7 @@
 package Tema5.Formas;
 
+import java.util.ArrayList;
+
 import Objetos.ejemplo;
 
 public class Test {
@@ -9,17 +11,16 @@ public class Test {
         Eclipse eclipse= new Eclipse("rojo", 2, 4, "nombre1", 12, 4);
         Cuadrado cuadrado= new Cuadrado("rojo", 3, 7, "nombre2", 5);
         Circulo circulo= new Circulo("rojo", 7, -2, "nombr33", 4);
-        int x=3;
-        int y=2;
-        for(int i=0;i<100;i++){
-            rectangulo.setColor("azul");
-            rectangulo.mover(x, y);
-            eclipse.setColor("azul");
-            eclipse.mover(x, y);
-            cuadrado.setColor("azul");
-            cuadrado.mover(x, y);
-            circulo.setColor("azul");
-            circulo.mover(x, y);
+        ArrayList<Forma> arrayObj = new ArrayList<>();
+        arrayObj.add(rectangulo);
+        arrayObj.add(eclipse);
+        arrayObj.add(cuadrado);
+        arrayObj.add(circulo);
+
+       for (Forma item : arrayObj) {
+            item.mover(3, 5);
+            item.setColor("azul");
+            item.imprimir();
         }
     }
 }

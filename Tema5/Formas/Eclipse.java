@@ -11,8 +11,8 @@ public class Eclipse extends Forma{
         this.radeoMenor = radeoMenor;
     }
 
-    public void imprimirRectangulo(){
-        Imprimir();
+    public void imprimir(){
+        super.imprimir();
         System.out.println("Radeo menor:"+radeoMenor+"\nRadeo mayor:"+radeoMayor);
     }
 

@@ -11,8 +11,8 @@ public class Rectangulo extends Forma {
         this.ladoMayor = ladoMayor;
     }
 
-    public void imprimirRectangulo(){
-        Imprimir();
+    public void imprimir(){
+        super.imprimir();
         System.out.println("Lado menor:"+ladoMenor+"\n Lado mayor:"+ladoMayor);
     }
 
