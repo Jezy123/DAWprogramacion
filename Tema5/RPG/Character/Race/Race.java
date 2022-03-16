@@ -13,7 +13,7 @@ public abstract class Race {
     }
 
     public String toString(){
-        return this.toString();
+        return getClass().getName();
     }
     
 }
