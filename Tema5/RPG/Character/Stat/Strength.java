@@ -1,5 +1,10 @@
 package Character.Stat;
 
-public class Strength implements Stat.java {
+public class Strength extends Stat  {
+
+    public Strength(int value) {
+        super(value);
+        //TODO Auto-generated constructor stub
+    }
     
 }

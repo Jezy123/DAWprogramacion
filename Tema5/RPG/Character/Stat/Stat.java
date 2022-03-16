@@ -1,4 +1,4 @@
-package Tema5.RPG.Character.Stat;
+package Character.Stat;
 
 public abstract class Stat {
     private int value;
