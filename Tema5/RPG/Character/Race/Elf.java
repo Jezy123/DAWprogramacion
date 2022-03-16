@@ -15,9 +15,9 @@ public class Elf extends Race {
         if(stat instanceof Intelligence){
             resultado=3;
         }else if(stat instanceof Constitution){
-            resultado=3;
-        }else if(stat instanceof Dexterity){
             resultado=-1;
+        }else if(stat instanceof Dexterity){
+            resultado=3;
         }
         return resultado;
     }
