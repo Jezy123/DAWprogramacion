@@ -11,11 +11,11 @@ public class Hunter extends Job {
         int resultado=0;
 
         if(stat instanceof Intelligence){
-            resultado+=1;
+            resultado=1;
         }else if(stat instanceof Dexterity){
-            resultado+=2;
+            resultado=2;
         }else if(stat instanceof Strength){
-            resultado+=1;
+            resultado=1;
         }
         return resultado;
     }

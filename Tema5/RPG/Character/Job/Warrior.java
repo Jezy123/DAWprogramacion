@@ -10,9 +10,9 @@ public class Warrior extends Job {
         int resultado=0;
 
         if(stat instanceof Strength){
-            resultado+=3;
+            resultado=3;
         }else if(stat instanceof Constitution){
-            resultado+=2;
+            resultado=2;
         }
         return resultado;
     }

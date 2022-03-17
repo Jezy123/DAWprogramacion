@@ -11,11 +11,11 @@ public class Strategist extends Job {
         int resultado=0;
 
         if(stat instanceof Intelligence){
-            resultado+=5;
+            resultado=5;
         }else if(stat instanceof Dexterity){
-            resultado-=1;
+            resultado=-1;
         }else if(stat instanceof Strength){
-            resultado-=2;
+            resultado=-2;
         }
         return resultado;
     }
