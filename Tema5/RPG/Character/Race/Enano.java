@@ -1,6 +1,6 @@
 package Character.Race;
 
-import Character.Stat.Constitution;
+
 import Character.Stat.Dexterity;
 import Character.Stat.Intelligence;
 import Character.Stat.Stat;
