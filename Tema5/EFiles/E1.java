@@ -1,6 +1,6 @@
 import java.io.File;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
+
 import java.util.Scanner;
 
 public class E1 {
@@ -13,6 +13,7 @@ public class E1 {
         int radio=0;
         int n=1;
         String queEs="";
+
         do{
             System.out.println("Lista de ficheros y directorios del directorio: "+f+"  ------------");
 
@@ -21,28 +22,35 @@ public class E1 {
             }else{
                 System.out.println(0+"-"+f.getParent());
             }
+
             for (File elemento : directorio) {
                 if(elemento.isDirectory()){
                     queEs=" <Directorio>";
                 }else{
                     queEs="";
                 }
-                System.out.println(n+"-"+elemento+queEs);
+                System.out.println(n+"-"+elemento.getName()+queEs);
                 n++;   
             }
+
             radio = lector.nextInt();
             n=1;
+
             if(radio==0){
                 f=f.getParentFile();
-            }else{
+            }else if(radio>0){
                 if(directorio[radio-1].canRead()){                
                     f=directorio[radio-1];
                 }else{
                     System.out.println("No tienes permisos de lectura");
                 }
             }
+
             directorio=f.listFiles();
-        }while (radio != -1); 
+            
+        }while (radio != -1);
+
+        lector.close();
             
         
     }
