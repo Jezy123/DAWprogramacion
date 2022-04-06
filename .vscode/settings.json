@@ -2,5 +2,11 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "Tema5/lib/jl1.0.1.jar"
+    ],
+    "java.project.sourcePaths": [
+        "Tema5/GestionDeContenidos",
+        "Tema5/EFiles",
+        "Tema6/Mezcla",
+        "."
     ]
 }

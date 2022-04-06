@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Mezcla",
+            "request": "launch",
+            "mainClass": "Mezcla",
+            "projectName": "DAWprogramacion-1_95897101"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicio2_1",
+            "request": "launch",
+            "mainClass": "Ejercicio2_1",
+            "projectName": "DAWprogramacion-1_95897101"
+        },
+        {
+            "type": "java",
+            "name": "Launch E2",
+            "request": "launch",
+            "mainClass": "E2",
+            "projectName": "DAWprogramacion-1_95897101"
+        },
+        {
+            "type": "java",
+            "name": "Launch E1",
+            "request": "launch",
+            "mainClass": "E1",
+            "projectName": "DAWprogramacion-1_95897101"
+        },
+        {
+            "type": "java",
             "name": "Launch UsuarioTest",
             "request": "launch",
             "mainClass": "Tema5.CutreCloudJulio.UsuarioTest",

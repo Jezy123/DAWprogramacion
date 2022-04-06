@@ -17,6 +17,7 @@ public class TransformaImagen {
         // mensajes de error)
         if(".bmp".equals(fEnt.getPath().substring(fEnt.getPath().length()-4))){
             f=fEnt;
+           
         }else{
             throw new Exception("Exception message");
         }
@@ -27,12 +28,25 @@ public class TransformaImagen {
     public void transformaNegativo() throws IOException {
 
         // Transformar a negativo y guardar como *_n.bmp
-        String nombre=f.getName()+"_b.bmp";
-       
+        String nombre="B"+f.getName();
         FileInputStream f_in=new FileInputStream(f);
-        FileOutputStream f_out=new FileOutputStream(nombre);
-        byte[] buffer=new byte[48];
-        int num =f_in.read(buffer);
+        FileOutputStream f_out=new FileOutputStream("/home/INFORMATICA/alu10204910/Escriptori/"+nombre);
+        byte[]buffer=new byte[1];
+        int n = f_in.read(buffer);
+
+        for(int i=0;i<f.length();i++){
+            if(i<=54){
+               f_out.write(buffer);
+            }else{
+                int a=255;
+                byte b= (byte)a;
+                f_out.write(buffer);
+            }
+            n = f_in.read(buffer);
+        }
+        f_in.close();
+        f_out.close();
+
  
     }
 

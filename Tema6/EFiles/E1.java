@@ -1,3 +1,4 @@
+package Tema6.EFiles;
 import java.io.File;
 
 
@@ -45,8 +46,11 @@ public class E1 {
                     System.out.println("No tienes permisos de lectura");
                 }
             }
-
+            if(directorio[radio-1].isDirectory()){                
             directorio=f.listFiles();
+            System.out.println("Elige un fichero");
+            }
+           
             
         }while (radio != -1);
 
