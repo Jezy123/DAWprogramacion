@@ -16,6 +16,7 @@ public class ContarPalabras {
 
         while(newline != null){
         text = text+ newline+" \n";
+        newline = breader.readLine();
         }
 
         String[] palabras = text.split(" ");
