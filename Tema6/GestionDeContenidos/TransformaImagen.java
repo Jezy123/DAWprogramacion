@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
 
 public class TransformaImagen {
 
@@ -28,34 +28,43 @@ public class TransformaImagen {
     public void transformaNegativo() throws IOException {
 
         // Transformar a negativo y guardar como *_n.bmp
-        String nombre="B"+f.getName();
-        FileInputStream f_in=new FileInputStream(f);
-        FileOutputStream f_out=new FileOutputStream("/home/INFORMATICA/alu10204910/Escriptori/"+nombre);
-        byte[]buffer=new byte[1];
-        int n = f_in.read(buffer);
+        FileInputStream reader = new FileInputStream(this.f);
+        File fOut = new File("./fichero_n.bmp");
+        FileOutputStream writer = new FileOutputStream(fOut);
+        int c;
 
-        for(int i=0;i<f.length();i++){
-            if(i<=54){
-               f_out.write(buffer);
+        for(int i = 0; i<this.f.length();i++){
+            c = reader.read();
+            if (i<=54){
+                writer.write(c);
             }else{
-                int a=255;
-                byte b= (byte)a;
-                f_out.write(buffer);
+            
+                writer.write(255-c);
             }
-            n = f_in.read(buffer);
         }
-        f_in.close();
-        f_out.close();
-
+        reader.close();
+        writer.close();
  
     }
 
     public void transformaOscuro() throws IOException {
 
         // Transformar a una imagen más oscura y guardar como *_o.bmp
+        FileInputStream reader = new FileInputStream(this.f);
+        File fOut = new File("./fichero_o.bmp");
+        FileOutputStream writer = new FileOutputStream(fOut);
+        int c;
 
-        
-
+        for(int i = 0; i<this.f.length();i++){
+            c = reader.read();
+            if (i<=54){
+                writer.write(c);
+            }else{            
+                writer.write(c/2);
+            }
+        }
+        reader.close();
+        writer.close();
     }
 
     
@@ -63,15 +72,30 @@ public class TransformaImagen {
     public void transformaBlancoNegro() throws IOException {
 
         // Transformar a una imagen en blanco y negro y guardar como *_bn.bmp
+        FileInputStream reader = new FileInputStream(this.f);
+        File fOut = new File("./fichero_b.bmp");
+        FileOutputStream writer = new FileOutputStream(fOut);
+        int byte0=0;
+        int byte1=0;
+        int byte2=0;
+        int media;
 
-    }
-
-    private String getNombreSinExtension() {
-
-        //Devuelve el nombre del archivo f sin extensión
-
-        
-
+        for(int i = 0; i<this.f.length();i++){
+            if (i<=54){
+                byte0 = reader.read();
+                writer.write(byte0);
+            }else{            
+                byte0 = reader.read();
+                byte1 = reader.read();
+                byte2 = reader.read();
+                media= (byte0+byte1+byte2)/3;
+                for(int x = 0; x<3;x++){
+                    writer.write(media);
+                }
+            }
+        }
+        reader.close();
+        writer.close();
     }
 
 }
