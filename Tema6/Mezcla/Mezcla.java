@@ -22,6 +22,9 @@ public class Mezcla {
             if((br2.readLine())!=null){
                 archivoMezcla.write(br2.readLine());
             }
+        archivoMezcla.close();
+        br.close();
+        br2.close();
         }
     }
 }
