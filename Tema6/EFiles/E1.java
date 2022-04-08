@@ -1,4 +1,5 @@
-package Tema6.EFiles;
+package EFiles;
+
 import java.io.File;
 
 

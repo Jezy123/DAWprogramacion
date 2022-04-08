@@ -1,4 +1,5 @@
-package Tema6.EFiles;
+package EFiles;
+
 import java.io.File;
 import java.text.DateFormat;
 import java.util.Locale;
