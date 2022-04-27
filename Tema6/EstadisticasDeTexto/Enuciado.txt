@@ -1,0 +1,4 @@
+Estadisticas texto
+
+crea un programa que analice un fichero de texto plano que muestre las siguientes estaditisticas
+numero de  palabras, lineas y letras, % de vocales y % de consonantes y % de espacios y % de tabuladores
