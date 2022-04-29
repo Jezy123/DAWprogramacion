@@ -1,0 +1,12 @@
+Crea una aplicacion con las siguientes caracteristicas una clase persona con los atributos nif nombre 
+y apellidos,esos atributos deben ser accesibles para las clases hijas y no accesibles para el resto debe
+clases, el acceso se hace mediante geters y setters adecuados,crea una clase cliente que ereda de persona
+con los atributos id nif nombre apellidos y email, estos atributos no deben ser accesibles desde 
+fuera de la calse dicho acceso se realizara mediante los getter y setters apropiados
+
+sobreescribe el metodo to string para mostrar los datos de un cliente de forma tabular
+crea una clase llamada Persistencia Cliente, con un metodo write que recibe un array list de clientes
+de tal forma que escribe en un fichero clientes.dat todos los clientes recibidos en el array list,
+cada cliente se escribe en una linea con los atributos separados por comas 
+crea un read que recibe el nombre del fichero a cargar y devuelve un arraylist con los clientes que ha conseguido
+leer
