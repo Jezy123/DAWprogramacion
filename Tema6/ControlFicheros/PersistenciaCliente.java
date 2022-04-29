@@ -10,21 +10,20 @@ import java.util.List;
 
 public class PersistenciaCliente {
 
-
-    public void write(Cliente[] clientes) throws IOException{
+    public static void write(Cliente[] clientes) throws IOException{
         FileWriter writer= new FileWriter("./ControlFicheros/Clientes.txt");
         BufferedWriter bWriter = new BufferedWriter(writer);
         String personas="";
         for (Cliente cli : clientes) {
-           personas= personas +cli.getId()+", "+ cli.getNif()+", "+cli.getNombre()+", "+cli.getApellido()+", "+cli.getEmail()+"\n";
+           personas= personas +cli.getId()+","+ cli.getNif()+","+cli.getNombre()+","+cli.getApellido()+","+cli.getEmail()+"\n";
         }
         bWriter.write(personas);
         bWriter.close();
 
     }
 
-    public void read() throws IOException{
-        FileReader reader = new FileReader("./ControlFicheros/Clientes.txt");
+    public static List<Cliente> read(String dirrecion) throws IOException{
+        FileReader reader = new FileReader(dirrecion);
         BufferedReader breader = new BufferedReader(reader);
         List<Cliente> clientesLista = new ArrayList<Cliente>();
         String cliente=breader.readLine();
@@ -37,6 +36,7 @@ public class PersistenciaCliente {
         }
 
         breader.close();
-        
+        return clientesLista;
+       
     }
 }
