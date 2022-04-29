@@ -7,7 +7,6 @@ public class Estadisticas2 {
     public static void main(String[] args) throws IOException {
         FileReader reader = new FileReader("./EstadisticasDeTexto/Ejemplo1.txt");
         BufferedReader breader = new BufferedReader(reader);
-        int espaciosSeguidos=0;
 
         int numeroDePalabras = 0;
         int numeroDeVocales = 0;
