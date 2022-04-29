@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ejercicio29",
+            "request": "launch",
+            "mainClass": "Ejercicios.Ejercicio29",
+            "projectName": "DAWprogramacion-1_95897101"
+        },
+        {
+            "type": "java",
             "name": "Launch Mezcla",
             "request": "launch",
             "mainClass": "Mezcla",

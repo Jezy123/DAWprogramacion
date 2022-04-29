@@ -8,10 +8,12 @@ public class LeerPrimos {
         FileReader reader = new FileReader("./primos.dat");
         BufferedReader Breader = new BufferedReader(reader);
         String line = Breader.readLine();
+
         while(line !=null){
-        System.out.println(line);
-        line = Breader.readLine();
+            System.out.println(line);
+            line = Breader.readLine();
         }
+
         Breader.close();
     }
 }

@@ -12,11 +12,11 @@ public class Mezcla2 {
         FileInputStream fInStream2 = new FileInputStream(args[1]);
         FileWriter archivoMezcla= new FileWriter(args[2]);
   
-        BufferedReader br = new BufferedReader(new InputStreamReader(fInStream1));
-        BufferedReader br2 = new BufferedReader(new InputStreamReader(fInStream2));
+        BufferedReader lectorFichero1 = new BufferedReader(new InputStreamReader(fInStream1));
+        BufferedReader lectorFichero2 = new BufferedReader(new InputStreamReader(fInStream2));
 
-        String line1=br.readLine();
-        String line2=br2.readLine();
+        String line1=lectorFichero1.readLine();
+        String line2=lectorFichero2.readLine();
 
         while( line1 != null || line2 != null){
             if (line1 != null) {
@@ -27,11 +27,11 @@ public class Mezcla2 {
                 archivoMezcla.write(line2);
                 archivoMezcla.write("\n");
             }
-            line1=br.readLine();
-            line2=br2.readLine();
+            line1=lectorFichero1.readLine();
+            line2=lectorFichero2.readLine();
         }
         archivoMezcla.close();
-        br.close();
-        br2.close();
+        lectorFichero1.close();
+        lectorFichero2.close();
     }
 }
