@@ -23,6 +23,7 @@ public class PersistenciaCliente {
     }
 
     public static List<Cliente> read(String dirrecion) throws IOException{
+        
         FileReader reader = new FileReader(dirrecion);
         BufferedReader breader = new BufferedReader(reader);
         List<Cliente> clientesLista = new ArrayList<Cliente>();
