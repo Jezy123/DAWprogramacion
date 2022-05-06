@@ -1,6 +1,8 @@
 package ControlFicheros;
 
-class Persona {
+import java.io.Serializable;
+
+class Persona implements Serializable{
     protected String nif;
     protected String nombre;
     protected String apellido;

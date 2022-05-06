@@ -1,4 +1,4 @@
-package ControlFicheros;
+package jsonFicheros;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,18 +8,22 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ControlFormato {
+import com.google.gson.Gson;
+import ControlFicheros.Cliente;
 
-    public static void write(Cliente[] clientes) throws IOException{
-        ObjectOutputStream f = new ObjectOutputStream(new FileOutputStream("./ControlFicheros/Clientes.txt"));       
+public class escribirJson {
+   
+    public static void writeJson(Cliente[] clientes) throws IOException{
+        ObjectOutputStream f = new ObjectOutputStream(new FileOutputStream("./ControlFicheros/Clientes2.txt"));       
+        final Gson gson = new Gson();
         
-        for (Cliente cli : clientes) {
-          f.writeObject(cli);
+        for (Cliente cli : clientes) {  
+        f.writeObject(gson.toJson(cli));
         }
         f.close();
     }
 
-    public static List<Cliente> read(String direccion) throws IOException{
+    public static void readJson(String direccion) throws IOException{
         ObjectInputStream f = new ObjectInputStream(new FileInputStream(direccion));
         List<Cliente> clientesLista = new ArrayList<Cliente>();
         Cliente c;
@@ -32,6 +36,5 @@ public class ControlFormato {
             f.close();
         }
         return clientesLista;
-       
     }
 }

@@ -4,5 +4,9 @@
         "GestionDeContenidos",
         "Primos",
         "."
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/INFORMATICA/alu10204910/Escriptori/gson-2.8.2.jar"
     ]
 }
