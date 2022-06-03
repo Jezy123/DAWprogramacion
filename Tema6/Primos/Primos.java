@@ -27,8 +27,9 @@ public class Primos {
                 }
             }            
         }
-        writer.close();
         printer.close();
+        writer.close();
+
 
     }
 }

@@ -23,14 +23,16 @@ public class escribirJson {
         f.close();
     }
 
-    public static void readJson(String direccion) throws IOException{
+    public static List<Cliente> readJson(String direccion) throws IOException{
         ObjectInputStream f = new ObjectInputStream(new FileInputStream(direccion));
+        final Gson gson = new Gson();
         List<Cliente> clientesLista = new ArrayList<Cliente>();
-        Cliente c;
+        String c;
         try {
             while(true){
-                c=(Cliente)f.readObject();
-                clientesLista.add(c);
+                c= (String) f.readObject();
+                final Cliente cliente = gson.fromJson(c, Cliente.class);         
+                clientesLista.add(cliente);
             }
         } catch (Exception e) {
             f.close();

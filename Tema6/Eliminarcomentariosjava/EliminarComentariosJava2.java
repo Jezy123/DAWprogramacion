@@ -28,6 +28,7 @@ public class EliminarComentariosJava2 {
           
             for (String palabra : parts) {
 
+                //index of line.indexOf("//")
                 if(palabra.equals("//") && comentAbrir!=1){
                     String[] separador=line.split("//");
                     texto=texto+separador[0]+"\n";
